@@ -1,9 +1,9 @@
 const BLOG = {
-  title: 'Hopsken',
+  title: 'Debug the World',
   author: 'hopsken',
   email: '',
   link: 'https://hopsken.com',
-  description: "Hopsken's personal blog",
+  description: "",
   lang: 'zh-CN',
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
