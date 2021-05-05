@@ -2,7 +2,7 @@ const BLOG = {
   title: 'Hopsken',
   author: 'hopsken',
   email: '',
-  link: 'https://hopsken.com'
+  link: 'https://hopsken.com',
   description: "Hopsken's personal blog",
   lang: 'zh_CN',
   appearance: 'auto', // ['light', 'dark', 'auto'],
