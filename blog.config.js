@@ -2,7 +2,7 @@ const BLOG = {
   title: 'Debug the World',
   author: 'hopsken',
   email: '',
-  link: 'https://hopsken.com',
+  link: 'https://blog.hopsken.com',
   description: "",
   lang: 'zh-CN',
   appearance: 'auto', // ['light', 'dark', 'auto'],
