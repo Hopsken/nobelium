@@ -4,7 +4,7 @@ const BLOG = {
   email: '',
   link: 'https://hopsken.com',
   description: "Hopsken's personal blog",
-  lang: 'zh_CN',
+  lang: 'zh-CN',
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
