@@ -1,25 +1,26 @@
 const BLOG = {
-  title: 'Debug the World',
-  author: 'hopsken',
+  title: "Hopsken's Blog",
+  author: 'Hopsken',
   email: '',
-  link: 'https://blog.hopsken.com',
-  description: "",
+  link: 'https://hopsken.com',
+  description: '',
   lang: 'zh-CN',
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
-  darkBackground: '#111827', // use hex value, don't forget '#'
+  darkBackground: '#18181B', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
-  since: 2021, // if leave this empty, current year will be used.
+  since: 2021, // If leave this empty, current year will be used.
   postsPerPage: 7,
   sortByDate: false,
-  showAbout: true, // WIP
-  showArchive: true, // WIP
-  autoCollapsedNavBar: false, // the automatically collapsed navigation bar
+  showAbout: true,
+  showArchive: true,
+  autoCollapsedNavBar: false, // The automatically collapsed navigation bar
+  ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: 'https://twitter.com/hopsken',
   seo: {
     keywords: ['Blog', 'Hopsken'],
-    googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
+    googleSiteVerification: '', // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
@@ -28,11 +29,11 @@ const BLOG = {
     ackeeConfig: {
       tracker: '', // e.g 'https://ackee.craigary.net/tracker.js'
       dataAckeeServer: '', // e.g https://ackee.craigary.net , don't end with a slash
-      domainId: '' // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
+      domainId: '', // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
     },
     gaConfig: {
-      measurementId: '' // e.g: G-XXXXXXXXXX
-    }
+      measurementId: '', // e.g: G-XXXXXXXXXX
+    },
   },
   comment: {
     // support provider: gitalk, utterances, cusdis
@@ -43,17 +44,18 @@ const BLOG = {
       admin: [],
       clientID: '',
       clientSecret: '',
-      distractionFreeMode: false
+      distractionFreeMode: false,
     },
     utterancesConfig: {
-      repo: ''
+      repo: '',
     },
     cusdisConfig: {
       appId: 'aca5555f-fee3-4a5f-811d-19b3d0c4db8a', // data-app-id
       host: 'https://cusdis.com', // data-host, change this if you're using self-hosted version
-      scriptSrc: 'https://cusdis.com/js/cusdis.es.js' // change this if you're using self-hosted version
-    }
-  }
+      scriptSrc: 'https://cusdis.com/js/cusdis.es.js', // change this if you're using self-hosted version
+    },
+  },
+  isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
 }
 // export default BLOG
 module.exports = BLOG
